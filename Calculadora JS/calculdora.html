@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calc">
+        <div class="scroll">
+            <div id="display" class="display">0</div>
+        </div>
+        <div class="calc-button">
+            <button onclick="inserir('%')" id="porc">%</button>
+            <button id="limparTudo" onclick="limpar()">C</button>
+            <button id="apagar" onclick="apagar()" class="BtnsSinais">«</button>
+            <button id="sinaldividir" onclick="inserir('/')" class="BtnsSinais">÷</button>
+            <button id="num7" onclick="inserir('7')" class="numBtn bgWhite">7</button>
+            <button id="num8" onclick="inserir('8')" class="numBtn bgWhite">8</button>
+            <button id="num9" onclick="inserir('9')" class="numBtn bgWhite">9</button>
+            <button id="sinalmultiplica" onclick="inserir('*')" class="BtnsSinais">x</button>
+            <button id="num4" onclick="inserir('4')" class="numBtn bgWhite">4</button>
+            <button id="num5" onclick="inserir('5')" class="numBtn bgWhite">5</button>
+            <button id="num6" onclick="inserir('6')" class="numBtn bgWhite">6</button>
+            <button id="sinalsubtrair" onclick="inserir('-')" class="BtnsSinais">-</button>
+            <button id="num1" onclick="inserir('1')" class="numBtn bgWhite">1</button>
+            <button id="num2" onclick="inserir('2')" class="numBtn bgWhite">2</button>
+            <button id="num3" onclick="inserir('3')" class="numBtn bgWhite">3</button>
+            <button id="sinalsomar" onclick="inserir('+')" class="BtnsSinais">+</button>
+            <button id="maismenos" onclick="inserir('±')" class="bgWhite">±</button>
+            <button id="num0" onclick="inserir('0')" class="numBtn bgWhite">0</button>
+            <button id="virg" onclick="inserir(',')" class="bgWhite">,</button>
+            <button id="igual" onclick="calcular()" class="btnIgual">=</button>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
